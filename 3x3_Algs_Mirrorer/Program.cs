@@ -53,6 +53,10 @@ namespace _3x3_Algs_Mirrorer
 
         private static string mirrorPart(string part)
         {
+            if (part.Length == 0)
+            {
+                return "";
+            }
             if (part[0].Equals('('))
             {
                 return "(" + mirrorPart(part.Substring(1));
