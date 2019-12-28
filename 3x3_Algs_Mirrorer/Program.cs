@@ -22,6 +22,15 @@ namespace _3x3_Algs_Mirrorer
 
         private static string mirrorAlg(string inAlg)
         {
+            if (inAlg.Length == 0)
+            {
+                return "No input";
+            }
+            if (inAlg == "clr")
+            {
+                Console.Clear();
+                return "Cleared";
+            }
             string[] partes;
             partes = inAlg.Split(' ');
             for(int i=0; i<partes.Length; i++)
